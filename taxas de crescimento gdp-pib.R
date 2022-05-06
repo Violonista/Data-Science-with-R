@@ -11,11 +11,7 @@ library (RColorBrewer)
 
 tabpib<-read.csv('txcrescimento.csv', header = T) ### Carregando a base de dados.
 
-dftabpib <- subset(tabpib, select = c('Argentina', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Venezuela')) ### Selecionando países.
-
-dftabpib ### Conferindo o data frame.
-
-dftabpib
+dftabpib <- subset(tabpib, select = c('Argentina', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Guyana', 'Paraguay', 'Venezuela')) ### Selecionando países e salvando em uma variável.
 
 
 Anos<-seq.Date(from = as_date("2000-01-01"),
